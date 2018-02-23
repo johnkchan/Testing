@@ -1,6 +1,6 @@
 $(document).ready(function() {
   
-  $("#hello world").on("click","button", function(){
+  $("#hello world").click(function(){
     console.log("hello world");
   })
 })
