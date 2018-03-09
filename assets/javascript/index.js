@@ -14,7 +14,7 @@ $(document).ready(function(){
     if (turn % 2 == 0){
       $(this).text("X");
     } else {
-      $(this).text("O");
+      $(this).text("O")
     }
     turn++;
     // $(this).prop("disabled", true);
