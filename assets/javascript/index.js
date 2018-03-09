@@ -3,6 +3,7 @@ $(document).ready(function(){
   $("#restartBtn").on("click", function(){
     $("td").each(function(){
       $("td").text("");
+      $("td").css("color", "black");
       $("td").css("pointer-events","auto");
     });
     $("#message").text("Welcome to Tic Tac Toe");
