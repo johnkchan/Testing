@@ -3,6 +3,7 @@ $(document).ready(function(){
   $("#restartBtn").on("click", function(){
     $("td").each(function(){
       $("td").text("");
+      $("td").css("pointer-events","auto");
     });
     $("#message").text("Welcome to Tic Tac Toe");
   });
@@ -15,7 +16,8 @@ $(document).ready(function(){
       $(this).text("O");
     }
     turn++;
-    $(this).prop("disabled", true);
+    // $(this).prop("disabled", true);
+    $(this).css("pointer-events","none");
     checkWinner($(this));
   });
 
