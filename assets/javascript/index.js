@@ -46,5 +46,8 @@ $(document).ready(function(){
       $("#message").text($("#cell3").text() + " has won!");
     }
   }
-
+  // Ties
+  if ($("#cell1").text() != "" &&  $("#cell2").text() != "" &&  $("#cell3").text() != "" &&  $("#cell4").text() != "" &&  $("#cell5").text() != "" &&  $("#cell6").text() != "" &&  $("#cell7").text() != "" &&  $("#cell8").text() != "" &&  $("#cell9").text() != "") {
+    $("#message").text("Draw!");
+  }
 })
